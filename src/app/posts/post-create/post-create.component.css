@@ -1,0 +1,45 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.image-preview {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+.image-preview img {
+  height: 100%;
+}
+
+button {
+  background-color: rgb(241, 108, 108);
+}
+
+mat-card{
+  background-color: rgba(191, 216, 215, 0.733);
+  width: 80%;
+   margin-left: 100px;
+}
+
+
+h1 {
+  color: rgba(0, 128, 128, 0.027);
+}
+
+
+html {
+  background-image: url("https://www.srpriscanwokorie.com/wp-content/uploads/2020/03/Do-not-misuse-your-health.jpg");
+  background-repeat: no-repeat;
+   background-size:cover;
+
+ }
+

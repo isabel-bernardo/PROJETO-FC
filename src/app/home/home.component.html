@@ -1,0 +1,25 @@
+<html>
+  <h1> .</h1>
+<mat-card>
+
+  <meta charset="UTF-8">
+​
+  <form [formGroup]="form" (submit)="onClick(text)" >
+​
+    <mat-form-field>
+      <textarea matInput rows="10" formControlName="content" placeholder="Entre com o texto" #text></textarea>
+    </mat-form-field>
+​
+    <button mat-raised-button color="primary" type="submit">Pesquisa</button>
+    <a mat-button routerLink="/login" routerLinkActive="mat-accent">Sair</a>
+</form>
+</mat-card>
+<h1>.</h1>
+<h2>
+<mat-card>
+<p>
+  {{saida}}
+</p>
+</mat-card>
+</h2>
+</html>

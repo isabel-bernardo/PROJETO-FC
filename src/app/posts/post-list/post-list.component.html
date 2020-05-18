@@ -1,0 +1,22 @@
+
+<html>
+  <h1> .</h1><h1> .</h1><h1> .</h1><h1> .</h1>
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<mat-accordion multi="true" *ngIf="posts.length > 0 && !isLoading">  <!--  multi permite que possa abrir varias abas ao mesmo tempo -->
+  <mat-expansion-panel *ngFor="let post of posts">   <!--let cria uma variavel (post no caso)-->
+    <mat-expansion-panel-header>
+      {{ post.title }}
+    </mat-expansion-panel-header>
+    <div class="post-image">
+      <img [src]="post.imagePath" [alt]="post.title">
+    </div>
+    <p>{{ post.content }}</p>
+    <mat-action-row>
+      <a mat-button color="primary" [routerLink]="['/edit', post.id]">Edit</a>   <!--primary = azul/roxo   accent = rosa -->
+      <button mat-button color="warn" (click)="onDelete(post.id)">Delete</button>    <!--warn = vermelho-->
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="posts.length <= 0 && !isLoading">No posts added yet!</p>
+<h1> .</h1><h1> .</h1><h1> .</h1><h1> .</h1><h1> .</h1><h1> .</h1>
+</html>
